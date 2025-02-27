@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # Assicurati che sia 
-il branch corretto
+  branch: main # Assicurati che sia il branch corretto
   auth_scope: repo
   identity_url: 
  https://dev-vryehmjsvh0fklrz.us.auth0.com
