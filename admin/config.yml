@@ -1,11 +1,8 @@
 backend:
   name: git-gateway
-  branch: main  # Assicurati che sia il branch corretto su GitHub
-  auth_scope: repo
-  identity_url: "https://your-auth0-tenant-url" # Inserisci l'URL del tuo Auth0
-  client_id: "tuo-client-id"
+  branch: main  # Assicurati che sia il branch corretto
 
-media_folder: "images/uploads" # Cartella per le immagini
+media_folder: "images/uploads" # Cartella per caricare immagini
 public_folder: "/images/uploads"
 
 collections:
