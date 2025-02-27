@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: admin # 0 il branch corretto
+  auth_scope: repo
+  identity_url: https://dev-vryehmjsvh0fklrz.us.auth0.com
+  client_id: wkBD8ghUxLMXMNU62BBrITjVjDoNhp4k
+
+media_folder: "images/uploads" # Dove caricare immagini
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pagine"
+    files:
+      - label: "Homepage"
+        name: "index"
+        file: "index.html"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+      - label: "Chi Sono"
+        name: "chi_sono"
+        file: "chi_sono.html"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+      - label: "Servizi"
+        name: "servizi"
+        file: "servizi.html"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+      - label: "Blog"
+        name: "blog"
+        file: "blog.html"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+      - label: "Contatti"
+        name: "contatti"
+        file: "contatti.html"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Contenuto", name: "body", widget: "markdown" }
