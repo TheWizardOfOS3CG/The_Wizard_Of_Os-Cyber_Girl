@@ -4,7 +4,7 @@ backend:
 il branch corretto
   auth_scope: repo
   identity_url: 
-https://dev-vryehmjsvh0fklrz.us.auth0.com
+ https://dev-vryehmjsvh0fklrz.us.auth0.com
   client_id: wkBD8ghUxLMXMNU62BBrITjVjDoNhp4k
 
 media_folder: "images/uploads" # Dove caricare immagini
