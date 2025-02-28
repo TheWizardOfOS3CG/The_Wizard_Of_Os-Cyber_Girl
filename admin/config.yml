@@ -1,15 +1,23 @@
 backend:
   name: github
-  repo: TheWizardOfOS/thewizardofos-cms
+  repo: TheWizardOfOS/wizard-cms
   branch: main
-  site_domain: thewizardofosandcybergirl.netlify.app
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  auth_scope: repo
 
-media_folder: "static/uploads"
+media_folder: "uploads"
 public_folder: "/uploads"
 
 collections:
+  - name: "pages"
+    label: "Pagine"
+    files:
+      - label: "Homepage"
+        name: "index"
+        file: "index.html"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
