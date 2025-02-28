@@ -1,28 +1,17 @@
 backend:
   name: github
-  repo: TheWizardOfOS/wizard-cms
+  repo: TheWizardOfOS3CG/The_Wizard_Of_Os-Cyber_Girl
   branch: main
-  auth_scope: repo
 
-media_folder: "uploads"
-public_folder: "/uploads"
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pagine"
-    files:
-      - label: "Homepage"
-        name: "index"
-        file: "index.html"
-        fields:
-          - { label: "Titolo", name: "title", widget: "string" }
-          - { label: "Contenuto", name: "body", widget: "markdown" }
-
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"
+    folder: "blog"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Contenuto", name: "body", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
