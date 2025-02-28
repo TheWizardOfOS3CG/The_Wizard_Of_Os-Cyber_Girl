@@ -2,10 +2,25 @@ backend:
   name: github
   repo: TheWizardOfOS3CG/The_Wizard_Of_Os-Cyber_Girl
   branch: main
+  base_url: https://api.github.com
+  auth_endpoint: https://github.com/login/oauth/authorize
 
+# Percorsi per i media caricati dal CMS
 media_folder: "uploads"
 public_folder: "/uploads"
 
+# Configurazione del CMS
+site_url: "https://thewizardofos3cg.github.io/The_Wizard_Of_Os-Cyber_Girl"
+display_url: "https://thewizardofos3cg.github.io/The_Wizard_Of_Os-Cyber_Girl"
+logo_url: "https://thewizardofos3cg.github.io/The_Wizard_Of_Os-Cyber_Girl/logo.png"
+
+# Impostazioni di autenticazione
+publish_mode: editorial_workflow
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+# Raccolte di contenuti gestiti dal CMS
 collections:
   - name: "blog"
     label: "Blog"
@@ -13,5 +28,34 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Tag", name: "tags", widget: "list" }
+      - { label: "Immagine di copertina", name: "thumbnail", widget: "image" }
+
+  - name: "pages"
+    label: "Pagine"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "index.md"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+      - label: "Chi sono"
+        name: "chi_sono"
+        file: "chi_sono.md"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+      - label: "Servizi"
+        name: "servizi"
+        file: "servizi.md"
+        fields:
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Descrizione", name: "body", widget: "markdown" }
+
+# Widget personalizzati
+editor:
+  preview: true
