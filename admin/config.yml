@@ -1,10 +1,13 @@
 backend:
   name: github
-  repo: TheWizardOfOS3CG/The_Wizard_Of_Os-Cyber_Girl
+  repo: TheWizardOfOS3CG/The_Wizard_Of_Os-Cyber_Girl  # Nome del repository corretto
   branch: main
+  auth_endpoint: auth
   base_url: https://github.com
-  auth_endpoint: login/oauth/authorize
-  client_id: "Ov23liKjQlGm4rhgFA1E"
+  site_domain: thewizardofosandcybergirl.netlify.app
+  cms_label_prefix: ""
+  app_id: Ov23liKjQlGm4rhgFA1E  # Il tuo Client ID OAuth
+  redirect_uri: "https://thewizardofosandcybergirl.netlify.app/admin/"
 
 media_folder: "uploads"
 public_folder: "/uploads"
