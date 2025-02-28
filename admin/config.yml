@@ -3,7 +3,8 @@ backend:
   repo: TheWizardOfOS3CG/The_Wizard_Of_Os-Cyber_Girl
   branch: main
   base_url: https://api.github.com
-  auth_endpoint: https://github.com/login/oauth/authorize
+  auth_endpoint: auth
+  cms_label_prefix: ""
 
 # Percorsi per i media caricati dal CMS
 media_folder: "uploads"
