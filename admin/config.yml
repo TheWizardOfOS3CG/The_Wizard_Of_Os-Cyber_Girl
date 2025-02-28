@@ -5,7 +5,7 @@ backend:
   auth_endpoint: auth
   base_url: https://github.com
   site_domain: thewizardofosandcybergirl.netlify.app
-  cms_label_prefix: ""
+  cms_label_prefix: "WizardOS"
   app_id: Ov23liKjQlGm4rhgFA1E  # Il tuo Client ID OAuth
   redirect_uri: "https://thewizardofosandcybergirl.netlify.app/admin/"
 
