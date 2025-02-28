@@ -2,10 +2,10 @@ backend:
   name: github
   repo: TheWizardOfOS3CG/The_Wizard_Of_Os-Cyber_Girl
   branch: main
-  base_url: https://api.github.com
-  auth_scope: repo
+  base_url: https://github.com
+  auth_endpoint: login/oauth/authorize
+  client_id: "Ov23liKjQlGm4rhgFA1E"
 
-# Percorsi per i media caricati dal CMS
 media_folder: "uploads"
 public_folder: "/uploads"
 
@@ -28,34 +28,5 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Contenuto", name: "body", widget: "markdown" }
-      - { label: "Data", name: "date", widget: "datetime" }
-      - { label: "Tag", name: "tags", widget: "list" }
-      - { label: "Immagine di copertina", name: "thumbnail", widget: "image" }
-
-  - name: "pages"
-    label: "Pagine"
-    files:
-      - label: "Home Page"
-        name: "home"
-        file: "index.md"
-        fields:
-          - { label: "Titolo", name: "title", widget: "string" }
-          - { label: "Contenuto", name: "body", widget: "markdown" }
-      - label: "Chi sono"
-        name: "chi_sono"
-        file: "chi_sono.md"
-        fields:
-          - { label: "Titolo", name: "title", widget: "string" }
-          - { label: "Contenuto", name: "body", widget: "markdown" }
-      - label: "Servizi"
-        name: "servizi"
-        file: "servizi.md"
-        fields:
-          - { label: "Titolo", name: "title", widget: "string" }
-          - { label: "Descrizione", name: "body", widget: "markdown" }
-
-# Widget personalizzati
-editor:
-  preview: true
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
