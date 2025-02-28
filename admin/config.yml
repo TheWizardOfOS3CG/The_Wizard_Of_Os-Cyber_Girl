@@ -12,7 +12,7 @@ public_folder: "/uploads"
 # Configurazione del CMS
 site_url: "https://thewizardofos3cg.github.io/The_Wizard_Of_Os-Cyber_Girl"
 display_url: "https://thewizardofos3cg.github.io/The_Wizard_Of_Os-Cyber_Girl"
-logo_url: "/logo.jpg"
+logo_url: "https://thewizardofos3cg.github.io/The_Wizard_Of_Os-Cyber_Girl/logo.jpg"
 
 # Impostazioni di autenticazione
 publish_mode: editorial_workflow
